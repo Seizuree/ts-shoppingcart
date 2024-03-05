@@ -20,7 +20,6 @@ const Footer = ({ viewCart }: PropsType) => {
 	)
 
 	const content = <footer className='footer'>{pageContent}</footer>
-
 	return content
 }
 

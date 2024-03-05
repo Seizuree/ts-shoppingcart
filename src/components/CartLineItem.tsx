@@ -36,7 +36,9 @@ const CartLineItem = ({ item, dispatch, REDUCER_ACTIONS }: PropsType) => {
         <li className="cart__item">
             <img src={img} alt={item.name} className="cart__img" />
             <div aria-label='Item Name'></div>
-            <div aria-label='Price Per Item'>{new Intl.NumberFormat('id-ID', {style: 'currency', currency: 'IDR'}).format(item.price)}</div>
+            <div aria-label='Price Per Item'>
+                {new Intl.NumberFormat('id-ID', {style: 'currency', currency: 'IDR'}).format(item.price)}
+            </div>
 
             <label htmlFor="itemQty" className='offscreen'>
                 Item Quantity
